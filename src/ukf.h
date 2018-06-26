@@ -3,6 +3,7 @@
 
 #include "measurement_package.h"
 #include "Eigen/Dense"
+#include "tools.h"
 #include <vector>
 #include <string>
 #include <fstream>
@@ -66,6 +67,13 @@ public:
 
   ///* Sigma point spreading parameter
   double lambda_;
+  
+  ///* the current NIS for radar
+  double NIS_radar_;
+
+  ///* the current NIS for laser
+  double NIS_laser_;
+
 
 
   /**
